@@ -1,0 +1,79 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus": {
+					"titleNView": false //去除导航栏 
+				}
+			}
+		},
+		{
+			//微视
+			"path": "pages/shortVideo/shortVideo",
+			"style": {
+				"app-plus": {
+					"titleNView": false //去除导航栏 
+				}
+			}
+		},
+		{
+			//上传微视
+			"path": "pages/addVideo/addVideo",
+			"style": {
+				"app-plus": {
+					"titleNView": false //去除导航栏 
+				}
+			}
+		},
+		{
+			//我的信息
+			"path": "pages/myInfo/myInfo",
+			"style": {
+				"app-plus": {
+					"titleNView": false //去除导航栏 
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+	,
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#1296db",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index", //对应pages 里设置的地址
+				"iconPath": "static/home.png",   //未选中时的图标
+				"selectedIconPath": "static/homeSelect.png", //被选中时的图标
+				"text": "首页" //标题
+			},
+			{
+				"pagePath": "pages/shortVideo/shortVideo", //对应pages 里设置的地址
+				"iconPath": "static/shortVideo.png",   //未选中时的图标
+				"selectedIconPath": "static/shortVideoSelect.png", //被选中时的图标
+				"text": "微视" //标题
+			},
+			{
+				"pagePath": "pages/addVideo/addVideo", //对应pages 里设置的地址
+				"iconPath": "static/addVideo.png",   //未选中时的图标
+				"selectedIconPath": "static/addVideoSelect.png", //被选中时的图标
+				"text": "发布" //标题
+			},
+			{
+				"pagePath": "pages/myInfo/myInfo", //对应pages 里设置的地址
+				"iconPath": "static/myInfo.png",   //未选中时的图标
+				"selectedIconPath": "static/myInfoSelect.png", //被选中时的图标
+				"text": "我的" //标题
+			}
+		]
+	}
+}

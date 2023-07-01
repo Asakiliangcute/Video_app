@@ -1,0 +1,25 @@
+server:
+  port: 9527   #设置端口号
+  servlet:
+    context-path: /    #设置当前项目的访问地址
+
+spring:
+  datasource:
+    # 8.x              com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/videos?useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: huahai020414.
+
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+mybatis:
+  type-aliases-package: com.videos.bean   #设置别名
+  mapper-locations: classpath:mappers/*.xml
+
+file:
+  upload_path: D:\WorkSpace\upload\video  #服务器上传的真实路径
+  static_access_path: /file/  #设置的映射地址 || 访问地址
